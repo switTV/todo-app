@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.TodoCounter {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #77ff5c;
+}

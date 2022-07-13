@@ -1,0 +1,40 @@
+.TodoItem{
+    background-color: beige;
+    margin-bottom: 10px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: rgb(36, 36, 36) 1px solid;
+    font-family: "Montserrat", sans-serif;
+}
+
+.TodoItem p{
+    color: #0D1821;
+}
+
+.Icon-check, .Icon-delete{
+    font-size: 17px;
+    color: #a6a6a6;
+}
+
+.Icon-check--active {
+    color: #4caf50;
+}
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+.Check:hover {
+    color: #53A2BE;
+}
+
+.Trash:hover {
+    color: #DD1C1A;
+}
+
+.TodoItem span{
+    margin: 10px;
+}

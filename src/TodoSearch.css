@@ -1,0 +1,24 @@
+.TodoSearch{
+    width: 233px;
+    border: none;
+    height: 35px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-bottom: 2px #fff solid;
+    outline: none;
+    text-align: center;
+}
+
+.TodoSearch::placeholder{
+    color: #fff;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    animation: change-color 2s infinite;
+}
+
+@keyframes change-color {
+    0% { color: #fff; border-bottom: 2px #fff solid; }
+    50% { color: rgb(126, 126, 126); border-bottom: 2px rgb(126, 126, 126) solid;}
+    100% { color: rgb(65, 65, 65); border-bottom: 2px rgb(65, 65, 65) solid;}
+    
+}
