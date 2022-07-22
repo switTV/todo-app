@@ -1,4 +1,5 @@
 .TodoItem{
+    position: relative;
     background-color: beige;
     margin-bottom: 10px;
     
@@ -9,6 +10,7 @@
     border-radius: 10px;
     border: rgb(36, 36, 36) 1px solid;
     font-family: "Montserrat", sans-serif;
+    width: 250px;
 }
 
 .TodoItem p{

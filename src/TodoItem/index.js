@@ -1,4 +1,4 @@
-import { react } from "react";
+import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCheck } from '@fortawesome/free-solid-svg-icons'
 import { faTrash } from '@fortawesome/free-solid-svg-icons'
@@ -6,17 +6,10 @@ import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
 
 function TodoItem(props) {
-    const onComplete = () => {
-        alert("ya completaste el todo " + props.text)
-    }
-
-    const onDelete = () => {
-        alert("ya eliminaste el todo " + props.text)
-    }
     
     return(
         <li className="TodoItem">
-            <span className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`} onClick = {onComplete}>
+            <span className={`Icon Icon-check ${props.completed && 'Icon-check--active'}`} onClick = {props.onComplete}>
                 <FontAwesomeIcon icon={faCheck}/>
             </span>
 
@@ -24,7 +17,7 @@ function TodoItem(props) {
                 {props.text}
             </p>
             
-            <span className="Icon Icon-delete" onClick={onDelete}>
+            <span className="Icon Icon-delete" onClick={props.onDelete}>
                 <FontAwesomeIcon icon={faTrash}/>
             </span>
         </li>
